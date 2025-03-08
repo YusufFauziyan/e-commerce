@@ -18,6 +18,9 @@ FROM nginx:alpine
 # Copy file hasil build ke dalam Nginx
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 
+# Copy konfigurasi Nginx
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 # Expose port untuk frontend
 EXPOSE 80
 
