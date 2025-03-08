@@ -1,0 +1,21 @@
+:root {
+  --p-avatar-width: 2rem;
+  --p-avatar-height: 2rem;
+  --p-avatar-font-size: 1rem;
+  --p-avatar-background: var(--p-content-border-color);
+  --p-avatar-color: var(--p-content-color);
+  --p-avatar-border-radius: var(--p-content-border-radius);
+  --p-avatar-icon-size: 1rem;
+  --p-avatar-group-border-color: var(--p-content-background);
+  --p-avatar-group-offset: -0.75rem;
+  --p-avatar-lg-width: 3rem;
+  --p-avatar-lg-height: 3rem;
+  --p-avatar-lg-font-size: 1.5rem;
+  --p-avatar-lg-icon-size: 1.5rem;
+  --p-avatar-lg-group-offset: -1rem;
+  --p-avatar-xl-width: 4rem;
+  --p-avatar-xl-height: 4rem;
+  --p-avatar-xl-font-size: 2rem;
+  --p-avatar-xl-icon-size: 2rem;
+  --p-avatar-xl-group-offset: -1.5rem;
+}

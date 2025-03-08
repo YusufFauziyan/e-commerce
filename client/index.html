@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <!-- Midtrans Snap.js -->
+    <script type="module">
+      const clientKey = import.meta.env.VITE_MIDTRANS_CLIENT_KEY
+      const snapScript = document.createElement('script')
+      snapScript.src = 'https://app.sandbox.midtrans.com/snap/snap.js'
+      snapScript.setAttribute('data-client-key', clientKey)
+      document.body.appendChild(snapScript)
+    </script>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
