@@ -43,20 +43,58 @@ git clone https://github.com/YusufFauziyan/e-commerce.git
 cd e-commerce
 ```
 
-### 🛠 2. Configure Environment Variables
+### 🛠 2. Configure Environment Backend Variables
 
 Before running the project, create a `.env` file inside `server/` and configure it based on your settings:
 
 ```env
-DB_HOST=mysql
+# JWT SECRET CODE
+JWT_ACCESS_SECRET_KEY=yoursecretkey
+JWT_REFRESH_SECRET_KEY=refreshsecretkey
+
+# GOOGLE CONSOLE AUTH GOOGLE
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+
+# TWILIO FOR OTP
+TWILIO_ACCOUNT_SID=
+TWILIO_AUTH_TOKEN=
+TWILIO_WHATSAPP_NUMBER=
+
+# MIDTRANS PAYMENT
+MIDTRANS_API_URL=https://api.sandbox.midtrans.com
+MIDTRANS_SERVER_KEY=
+MIDTRANS_CLIENT_KEY=
+
+# CLOUDINARY FOR IMAGE UPLOAD
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+
+# DATABASE
+DB_HOST=mysql-db
+DB_PORT=3306
 DB_USER=root
 DB_PASSWORD=root
 DB_NAME=ecommerce_db
-JWT_ACCESS_SECRET_KEY=your_access_secret
-JWT_REFRESH_SECRET_KEY=your_refresh_secret
 ```
 
-### 📦 3. Build and Run Containers
+### 🛠 3. Configure Environment Frontend Variables
+
+Before running the project, create a `.env` file inside `client/` and configure it based on your settings:
+
+```env
+# API BACKEND
+VITE_API_BASE_URL=http://localhost:3000/api
+
+# GOOGLE CLIENT ID
+VITE_GOOGLE_CLIENT_ID=
+
+# MIDTRANS KEY
+VITE_MIDTRANS_CLIENT_KEY=
+```
+
+### 📦 4. Build and Run Containers
 
 ```bash
 docker-compose up -d --build
@@ -68,7 +106,7 @@ This will:
 - Build and run the backend (`backend-app`)
 - Build and run the frontend (`frontend-app`)
 
-### 🔍 4. Verify Running Containers
+### 🔍 5. Verify Running Containers
 
 ```bash
 docker ps
@@ -83,7 +121,7 @@ def67890       mysql:8          Up 2 minutes    0.0.0.0:3306->3306/tcp  mysql-db
 xyz98765       frontend-app     Up 2 minutes    0.0.0.0:8080->80/tcp    frontend-app
 ```
 
-### 🏃‍♂️ 5. Testing the Setup
+### 🏃‍♂️ 6. Testing the Setup
 
 #### 🔹 Backend API
 
