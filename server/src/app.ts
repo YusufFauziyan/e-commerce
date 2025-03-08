@@ -3,6 +3,7 @@ import cors from "cors";
 import bodyParser from "body-parser";
 
 // routes
+import healthRoutes from "./routes/healthRoutes";
 import authRoutes from "./routes/authRoutes";
 import verifyRoutes from "./routes/verifyRoutes";
 import userRoutes from "./routes/userRoutes";
@@ -38,6 +39,9 @@ app.use("/api/collection", orderRoutes);
 app.use("/api/collection", shippingRoutes);
 app.use("/api/collection", reviewRoutes);
 app.use("/api", paymentRoutes);
+
+// check health
+app.use("/api", healthRoutes);
 
 const port = 3000;
 app.listen(port, () => {
