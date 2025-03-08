@@ -39,8 +39,8 @@ e-commerce-personal-web-app/
 ### 🔧 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-repo/e-commerce-personal-web-app.git
-cd e-commerce-personal-web-app
+git clone https://github.com/YusufFauziyan/e-commerce.git
+cd e-commerce
 ```
 
 ### 🛠 2. Configure Environment Variables
